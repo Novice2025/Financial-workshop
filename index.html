@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Financial English: Market Turbulence & Opportunities</title>
+    <!-- Load Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Configure Tailwind to use Inter font and custom colors -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'primary': '#0D47A1', // Dark Blue
+                        'secondary': '#FFC107', // Amber/Gold
+                        'background': '#F4F7F9', // Light Gray-Blue
+                        'card': '#FFFFFF',
+                        'success': '#10B981', // Green
+                        'error': '#EF4444', // Red
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    },
+                }
+            }
+        }
+    </script>
+    <style>
+        /* Custom styling for text highlighting */
+        .highlight-term {
+            background-color: #f7e6a7; /* Light yellow highlight */
+            font-weight: 600;
+            padding: 2px 4px;
+            border-radius: 4px;
+        }
+        /* Custom table styling for responsiveness and aesthetics */
+        .definition-table th, .definition-table td {
+            padding: 12px;
+            text-align: left;
+        }
+        .definition-table th {
+            background-color: #e3f2fd; /* Very light blue for headers */
+            color: #1f2937; /* Dark text */
+            font-weight: 700;
+        }
+        .definition-table tr:nth-child(even) {
+            background-color: #f9fafb; /* Light stripe */
+        }
+        /* New styles for immediate feedback */
+        .question-container {
+            transition: background-color 0.3s ease, border-color 0.3s ease;
+        }
+    </style>
+</head>
+<body class="bg-background min-h-screen p-4 md:p-8 font-sans">
+
+    <div class="max-w-6xl mx-auto">
+
+        <!-- Header -->
+        <header class="bg-primary text-white p-6 rounded-xl shadow-lg mb-8">
+            <h1 class="text-3xl md:text-4xl font-extrabold mb-1">Financial English Workshop</h1>
+            <p class="text-xl font-light opacity-90">Decoding Market Commentary: Turbulence and Investment Plays</p>
+        </header>
+
+        <!-- Vocabulary Section -->
+        <section class="mb-10">
+            <h2 class="text-2xl md:text-3xl font-bold text-primary mb-6 border-b-2 border-secondary pb-2 flex items-center">
+                <svg class="w-6 h-6 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.463 9.255 4.752 7.5 4.752c-1.764 0-3.303.701-4.475 1.873M12 6.253C13.168 5.463 14.745 4.752 16.5 4.752c1.764 0 3.303.701 4.475 1.873m-4.475 0V14.25m-4.475 0v2.091c0 .486-.395.881-.881.881h-.442c-.486 0-.881-.395-.881-.881V14.25m4.475 0h.894M16.5 6.253v7.997m-4.475-6.68V14.25m0-13a.75.75 0 011.5 0v.75A.75.75 0 0112 2v-.75zm-6 3a.75.75 0 011.5 0v.75A.75.75 0 016 5v-.75zm12 0a.75.75 0 011.5 0v.75A.75.75 0 0118 5v-.75z"></path></svg>
+                Key Financial Vocabulary
+            </h2>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+
+                <!-- Card 1: Wealth Advisers -->
+                <div class="bg-card p-5 rounded-lg shadow-md border-t-4 border-secondary transition duration-300 hover:shadow-xl">
+                    <h3 class="text-xl font-semibold text-gray-800 mb-2">Wealth Advisers / Investment Experts</h3>
+                    <p class="text-gray-600">Professionals who provide financial advice and portfolio management services to high-net-worth individuals or institutional clients.</p>
+                </div>
+
+                <!-- Card 2: Point to Promising Investments -->
+                <div class="bg-card p-5 rounded-lg shadow-md border-t-4 border-secondary transition duration-300 hover:shadow-xl">
+                    <h3 class="text-xl font-semibold text-gray-800 mb-2">Point to Promising Investments</h3>
+                    <p class="text-gray-600">To indicate or suggest specific assets (stocks, bonds, property, etc.) that are expected to yield good returns in the future.</p>
+                </div>
+
+                <!-- Card 3: Expecting More Turbulence Ahead -->
+                <div class="bg-card p-5 rounded-lg shadow-md border-t-4 border-secondary transition duration-300 hover:shadow-xl">
+                    <h3 class="text-xl font-semibold text-gray-800 mb-2">Expecting More Turbulence Ahead</h3>
+                    <p class="text-gray-600">Anticipating a period of significant volatility, instability, or rapid, unpredictable changes in the financial markets.</p>
+                </div>
+
+                <!-- Card 4: Lofty Stock Valuations / Fuelled by Hype -->
+                <div class="bg-card p-5 rounded-lg shadow-md border-t-4 border-secondary transition duration-300 hover:shadow-xl">
+                    <h3 class="text-xl font-semibold text-gray-800 mb-2">Lofty Stock Valuations / Fueled by AI Hype</h3>
+                    <p class="text-gray-600">When the price of stocks is very high (lofty) relative to their underlying value, often driven by intense, unproven excitement (hype) over a sector like Artificial Intelligence (AI).</p>
+                </div>
+
+                <!-- Card 5: High-Stakes Tariff Battle / Credit-Markets Meltdowns -->
+                <div class="bg-card p-5 rounded-lg shadow-md border-t-4 border-secondary transition duration-300 hover:shadow-xl">
+                    <h3 class="text-xl font-semibold text-gray-800 mb-2">High-Stakes Tariff Battle / Credit-Markets Meltdowns</h3>
+                    <p class="text-gray-600">**Tariff Battle:** A serious conflict (high-stakes) involving taxes (tariffs) imposed on imported goods. **Meltdowns:** A rapid, severe collapse in the markets where debt (credit) is traded.</p>
+                </div>
+
+                <!-- Card 6: Value Plays / Luxury Real Estate -->
+                <div class="bg-card p-5 rounded-lg shadow-md border-t-4 border-secondary transition duration-300 hover:shadow-xl">
+                    <h3 class="text-xl font-semibold text-gray-800 mb-2">Value Plays / Luxury Real Estate</h3>
+                    <p class="text-gray-600">**Value Plays:** Investing in stocks considered undervalued. **Luxury Real Estate:** High-end property, often seen as a stable investment for preserving wealth.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contextual Walkthrough Section -->
+        <section class="mb-10">
+            <h2 class="text-2xl md:text-3xl font-bold text-primary mb-6 border-b-2 border-secondary pb-2 flex items-center">
+                <svg class="w-6 h-6 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 15l-2 5L9 9l11 4-5 2zm0 0v2m0 1.5a1.5 1.5 0 11-3 0 1.5 1.5 0 013 0z"></path></svg>
+                Expression Walkthrough: Real-World Context
+            </h2>
+
+            <div class="bg-card p-6 rounded-lg shadow-lg">
+                <p class="text-lg text-gray-800 leading-relaxed italic">
+                    Four <span class="highlight-term" data-term="Wealth Advisers">wealth advisers</span> <span class="highlight-term" data-term="Point to Promising Investments">point to promising investments</span> around the world.
+                </p>
+                <p class="text-gray-700 leading-relaxed">
+                    <span class="highlight-term" data-term="Investment Experts">Investment experts</span> are <span class="highlight-term" data-term="Expecting More Turbulence Ahead">expecting more turbulence ahead</span> as <span class="highlight-term" data-term="Pressures on Financial Markets Mount">pressures on financial markets mount</span>. On top of <span class="highlight-term" data-term="Lofty Stock Valuations">lofty stock valuations</span> <span class="highlight-term" data-term="Fueled by AI Hype">fueled by AI hype</span>, there’s the <span class="highlight-term" data-term="High-Stakes Tariff">high-stakes tariff battle</span> between the US and China, <span class="highlight-term" data-term="Credit-Markets Meltdowns">credit-markets meltdowns</span> and a <span class="highlight-term" data-term="US Government Shutdown">US government shutdown</span>. Still, <span class="highlight-term" data-term="Overall Earnings Have Been Strong">overall earnings have been strong</span>, and the S&P 500 has largely powered past obstacles.
+                </p>
+                <p class="text-gray-700 leading-relaxed mt-4">
+                    Bloomberg asked four wealth advisers to identify promising investment areas <span class="highlight-term" data-term="Amid the Chaos">amid the chaos</span>. <span class="highlight-term" data-term="They Pointed to Opportunities">They pointed to opportunities</span> <span class="highlight-term" data-term="Ranging from Value Plays">ranging from value plays in health care to global mining companies and luxury real estate</span> — and shared how they’d spend a $1 million windfall on a personal interest.
+                </p>
+            </div>
+        </section>
+
+        <!-- Reference Table Section (UPDATED with Search Bar) -->
+        <section class="mt-10">
+            <h2 class="text-2xl md:text-3xl font-bold text-primary mb-6 border-b-2 border-secondary pb-2 flex items-center">
+                <svg class="w-6 h-6 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 17v-1.5M15 17v-1.5M4 11h.01M4 17h.01M16 11h.01M16 17h.01M18 11h.01M18 17h.01M12 11h.01M12 17h.01M12 6v.01M18 6v.01M6 6v.01M6 11h.01M6 17h.01"></path></svg>
+                Quick Reference: Highlighted Terms
+            </h2>
+            
+            <!-- Search Bar for Filtering -->
+            <div class="mb-4">
+                <input type="text" id="termSearch" onkeyup="filterTable()" placeholder="Filter terms by keyword..." 
+                       class="w-full p-3 border-2 border-gray-300 rounded-lg focus:border-primary focus:ring focus:ring-primary focus:ring-opacity-50 transition duration-150">
+            </div>
+
+            <div class="bg-card rounded-lg shadow-xl overflow-x-auto">
+                <table class="min-w-full definition-table text-sm md:text-base">
+                    <thead>
+                        <tr>
+                            <th class="w-1/5">Term/Phrase</th>
+                            <th class="w-2/5">Definition in Context</th>
+                            <th class="w-2/5">Contextual Example (Imagine That...)</th>
+                        </tr>
+                    </thead>
+                    <tbody id="termTableBody">
+                        <tr>
+                            <td>**Wealth Advisers** / **Investment Experts**</td>
+                            <td>Professionals who manage client portfolios and provide financial advice.</td>
+                            <td>...your **wealth adviser** suggests diversifying your portfolio into gold.</td>
+                        </tr>
+                        <tr>
+                            <td>**Point to Promising Investments**</td>
+                            <td>Suggesting specific assets expected to yield good returns (profit).</td>
+                            <td>...financial news reported that analysts **point to promising investments** in clean energy startups.</td>
+                        </tr>
+                        <tr>
+                            <td>**Expecting More Turbulence Ahead**</td>
+                            <td>Anticipating increased volatility and instability in the markets.</td>
+                            <td>...given the election year, many traders are **expecting more turbulence ahead** in the stock market.</td>
+                        </tr>
+                        <tr>
+                            <td>**Pressures on Financial Markets Mount**</td>
+                            <td>Increasing strain or stress on global financial systems.</td>
+                            <td>...as interest rates rise globally, **pressures on financial markets mount**, making borrowing more expensive.</td>
+                        </tr>
+                        <tr>
+                            <td>**Lofty Stock Valuations**</td>
+                            <td>Stock prices are very high relative to their actual, underlying value.</td>
+                            <td>...that tech stock's price is clearly driven by **lofty stock valuations**; it makes no profit yet!</td>
+                        </tr>
+                        <tr>
+                            <td>**Fueled by AI Hype**</td>
+                            <td>Driven by intense, unproven excitement (hype) about Artificial Intelligence.</td>
+                            <td>...the recent surge in chip manufacturing stocks is entirely **fueled by AI hype**, not underlying demand.</td>
+                        </tr>
+                        <tr>
+                            <td>**High-Stakes Tariff Battle**</td>
+                            <td>A serious conflict involving taxes (tariffs) imposed on imported goods.</td>
+                            <td>...if the US and EU enter a **high-stakes tariff battle** over cars, imports could halt entirely.</td>
+                        </tr>
+                        <tr>
+                            <td>**Credit-Markets Meltdowns**</td>
+                            <td>A rapid, severe collapse in the markets where debt and lending occur.</td>
+                            <td>...a housing bubble collapse could trigger **credit-markets meltdowns**, freezing all bank lending.</td>
+                        </tr>
+                        <tr>
+                            <td>**US Government Shutdown**</td>
+                            <td>A halt of non-essential government services due to a lack of funding approval.</td>
+                            <td>...during the last **US Government Shutdown**, many federal services temporarily closed, slowing down economic activity.</td>
+                        </tr>
+                        <tr>
+                            <td>**Overall Earnings Have Been Strong**</td>
+                            <td>Companies have generally reported good profits, despite market issues.</td>
+                            <td>...despite geopolitical instability, Q3 reports show that **overall earnings have been strong** across the banking sector.</td>
+                        </tr>
+                        <tr>
+                            <td>**Amid the Chaos**</td>
+                            <td>In the middle of the instability or confusion.</td>
+                            <td>...the savvy investor looked for opportunities **amid the chaos**, buying assets when everyone else was selling.</td>
+                        </tr>
+                        <tr>
+                            <td>**They Pointed to Opportunities**</td>
+                            <td>They indicated potential chances for success or profit.</td>
+                            <td>...after reviewing the data, the board **pointed to opportunities** in emerging Asian markets.</td>
+                        </tr>
+                        <tr>
+                            <td>**Ranging from Value Plays**</td>
+                            <td>Opportunities including investments in assets considered undervalued.</td>
+                            <td>...our investment strategy is diverse, **ranging from value plays** in utilities to high-growth bonds.</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <!-- Knowledge Check Quiz Section (UPDATED) -->
+        <section class="mt-10 p-6 bg-card rounded-lg shadow-xl border-t-4 border-primary">
+            <h2 class="text-2xl md:text-3xl font-bold text-primary mb-6 flex items-center">
+                <svg class="w-6 h-6 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-3 7h3m-3 4h3m-6-4h.01M10 16h.01"></path></svg>
+                Knowledge Check: Vocabulary Quiz
+            </h2>
+            <div id="quizContainer">
+                <!-- Quiz questions will be dynamically loaded here -->
+            </div>
+            <button id="submitQuiz" class="mt-6 w-full md:w-auto bg-secondary text-primary font-bold py-3 px-6 rounded-lg shadow-md hover:bg-yellow-400 transition duration-200">
+                Show Final Score
+            </button>
+            <div id="quizFeedback" class="mt-4 text-lg font-semibold hidden p-4 rounded-lg"></div>
+        </section>
+        
+    </div>
+
+    <script>
+        // --- Table Filtering Logic ---
+        function filterTable() {
+            const input = document.getElementById("termSearch");
+            const filter = input.value.toUpperCase();
+            const tableBody = document.getElementById("termTableBody");
+            const rows = tableBody.getElementsByTagName("tr");
+
+            for (let i = 0; i < rows.length; i++) {
+                // Check all cells in the row
+                let rowText = "";
+                const cells = rows[i].getElementsByTagName("td");
+                for (let j = 0; j < cells.length; j++) {
+                    rowText += cells[j].textContent || cells[j].innerText;
+                }
+                
+                // Show or hide the row based on the filter
+                if (rowText.toUpperCase().indexOf(filter) > -1) {
+                    rows[i].style.display = "";
+                } else {
+                    rows[i].style.display = "none";
+                }
+            }
+        }
+
+        // --- Quiz Data ---
+        const quizData = [
+            {
+                question: "Which phrase means 'stock prices are very high relative to their actual value'?",
+                options: ["Credit-Markets Meltdowns", "Lofty Stock Valuations", "Value Plays"],
+                answer: "Lofty Stock Valuations"
+            },
+            {
+                question: "What refers to investing in assets considered undervalued?",
+                options: ["Amid the Chaos", "Overall Earnings Have Been Strong", "Ranging from Value Plays"],
+                answer: "Ranging from Value Plays"
+            },
+            {
+                question: "A severe collapse in the debt/lending markets is a:",
+                options: ["US Government Shutdown", "High-Stakes Tariff Battle", "Credit-Markets Meltdowns"],
+                answer: "Credit-Markets Meltdowns"
+            },
+            {
+                question: "Anticipating increased volatility and instability is:",
+                options: ["Expecting More Turbulence Ahead", "Fueled by AI Hype", "Pressures on Financial Markets Mount"],
+                answer: "Expecting More Turbulence Ahead"
+            },
+            {
+                question: "A serious conflict involving taxes (tariffs) imposed on imported goods is a:",
+                options: ["Credit-Markets Meltdowns", "High-Stakes Tariff Battle", "US Government Shutdown"],
+                answer: "High-Stakes Tariff Battle"
+            },
+            {
+                question: "Professionals who manage client portfolios and provide financial advice are called:",
+                options: ["Hedge Fund Managers", "Wealth Advisers", "Day Traders"],
+                answer: "Wealth Advisers"
+            },
+            {
+                question: "When volatility is high and market changes are rapid and unpredictable, the market is experiencing:",
+                options: ["Consolidation", "Liquidity", "Turbulence"],
+                answer: "Turbulence"
+            },
+            {
+                question: "When stock prices are driven by intense, unproven excitement over a sector like AI, they are:",
+                options: ["Fundamentally Sound", "Fueled by AI Hype", "Adjusted for Inflation"],
+                answer: "Fueled by AI Hype"
+            },
+            {
+                question: "When companies have generally reported strong profits, it's reported that:",
+                options: ["Overall Earnings Have Been Strong", "Credit-Markets Meltdowns", "Lofty Stock Valuations"],
+                answer: "Overall Earnings Have Been Strong"
+            },
+            {
+                question: "A temporary halt of non-essential government services due to a funding dispute is a:",
+                options: ["Fiscal Cliff", "Recession", "US Government Shutdown"],
+                answer: "US Government Shutdown"
+            },
+            {
+                question: "The time to look for opportunities when the market is unstable or confused is said to be:",
+                options: ["During the Peak", "Amid the Chaos", "In the Recovery Phase"],
+                answer: "Amid the Chaos"
+            },
+            {
+                question: "When increasing strain or stress is placed on global financial systems, we say:",
+                options: ["Pressures on Financial Markets Mount", "The Fed is Easing", "Growth is Stabilizing"],
+                answer: "Pressures on Financial Markets Mount"
+            },
+            {
+                question: "The action of suggesting specific assets expected to yield good profits is to:",
+                options: ["Close a Position", "Point to Promising Investments", "Short the Market"],
+                answer: "Point to Promising Investments"
+            },
+            {
+                question: "Which type of asset is often seen as a stable, high-end investment for preserving wealth?",
+                options: ["Treasury Bills", "Luxury Real Estate", "Cryptocurrency"],
+                answer: "Luxury Real Estate"
+            }
+        ];
+
+        // --- Immediate Evaluation Logic (New) ---
+        function evaluateAnswer(questionIndex) {
+            const item = quizData[questionIndex];
+            const radios = document.getElementsByName(`question${questionIndex}`);
+            const questionDiv = document.getElementById(`q${questionIndex}`);
+            
+            // 1. Clear previous feedback classes (main container)
+            questionDiv.classList.remove('border-error', 'border-success', 'bg-red-50', 'bg-green-50');
+
+            let isCorrect = false;
+
+            for (let i = 0; i < radios.length; i++) {
+                const radio = radios[i];
+                const label = radio.closest('label'); // Get the parent label element
+
+                // 2. Clear previous highlighting from the option label
+                label.classList.remove('border-2', 'border-success', 'bg-green-100', 'font-bold');
+
+                // 3. Check for the correct answer and highlight it permanently
+                if (radio.value === item.answer) {
+                    label.classList.add('border-2', 'border-success', 'bg-green-100', 'font-bold');
+                }
+
+                // 4. Check the user's selection and set the main container background
+                if (radio.checked) {
+                    if (radio.value === item.answer) {
+                        isCorrect = true;
+                    }
+                }
+            }
+
+            // 5. Apply overall feedback to the question container based on the user's selected answer
+            // This is done after the correct answer is highlighted, ensuring visual order.
+            const selectedRadio = Array.from(radios).find(r => r.checked);
+            if (selectedRadio) {
+                if (selectedRadio.value === item.answer) {
+                    questionDiv.classList.add('border-success', 'bg-green-50');
+                } else {
+                    questionDiv.classList.add('border-error', 'bg-red-50');
+                }
+            }
+            
+            // Hide final score feedback until explicitly requested again
+            document.getElementById('quizFeedback').classList.add('hidden');
+        }
+
+        function loadQuiz() {
+            const container = document.getElementById('quizContainer');
+            container.innerHTML = quizData.map((item, index) => `
+                <div id="q${index}" class="mb-5 p-4 border border-gray-200 rounded-lg bg-gray-50 question-container">
+                    <p class="font-semibold text-gray-800 mb-3">${index + 1}. ${item.question}</p>
+                    <div class="options space-y-2">
+                        ${item.options.map(option => `
+                            <label class="block cursor-pointer p-2 rounded hover:bg-gray-100">
+                                <input type="radio" 
+                                       name="question${index}" 
+                                       value="${option}" 
+                                       onchange="evaluateAnswer(${index})" 
+                                       class="mr-2 accent-primary">
+                                ${option}
+                            </label>
+                        `).join('')}
+                    </div>
+                </div>
+            `).join('');
+        }
+
+        // --- Final Score Calculation (Updated submitQuiz) ---
+        function submitQuiz() {
+            let score = 0;
+            const feedbackDiv = document.getElementById('quizFeedback');
+            
+            quizData.forEach((item, index) => {
+                const radios = document.getElementsByName(`question${index}`);
+                
+                // Ensure the immediate feedback runs for all questions when the button is pressed
+                evaluateAnswer(index); 
+
+                for (let i = 0; i < radios.length; i++) {
+                    if (radios[i].checked) {
+                        if (radios[i].value === item.answer) {
+                            score++;
+                        }
+                        break;
+                    }
+                }
+            });
+
+            const total = quizData.length;
+            const percentage = (score / total) * 100;
+            
+            feedbackDiv.classList.remove('hidden');
+            feedbackDiv.innerHTML = `You scored ${score} out of ${total} (${percentage.toFixed(0)}%). Keep practicing!`;
+            
+            // Update final feedback box colors
+            if (score >= total * 0.75) { // 75% or higher is a good score
+                feedbackDiv.classList.add('bg-success', 'text-white');
+                feedbackDiv.classList.remove('bg-error');
+            } else {
+                feedbackDiv.classList.add('bg-error', 'text-white');
+                feedbackDiv.classList.remove('bg-success');
+            }
+        }
+
+        document.addEventListener('DOMContentLoaded', () => {
+            loadQuiz();
+            document.getElementById('submitQuiz').addEventListener('click', submitQuiz);
+        });
+    </script>
+</body>
+</html>
